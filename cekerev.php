@@ -17,7 +17,7 @@ $banner = "\e[36;1m
 Coded by   : Revan AR
 Recoded by : Arliansyah
 Team       : Error Violence Reborn
-Partner    : IndoSec";
+Partner    : IndoSec\n\n";
                                                                                  
                                                                                                                                                                  
 	sleep(3);
