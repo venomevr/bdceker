@@ -14,9 +14,10 @@ $banner = "\e[36;1m
                                                                                  
 [#] Shell Checker [#]    
                                    
-Coded by : Revan AR                  
-Team     : IndoSec                   
-Github   : https//github.com/revan-ar/\n\n\e[0;1m";
+Coded by   : Revan AR
+Recoded by : Arliansyah
+Team       : Error Violence Reborn
+Partner    : IndoSec
                                                                                  
                                                                                                                                                                  
 	sleep(3);
@@ -26,11 +27,11 @@ Github   : https//github.com/revan-ar/\n\n\e[0;1m";
 	$list = trim(fgets(STDIN));
 	$su = file_get_contents($list);
 	if (empty($su)) {
-		echo "file tidak ada\n";
+		echo "file gaada gblk\n";
 	}else{
 
 	$ck = explode("\n", $su);
-	echo "\nCEK HASILNYA DI shell_aktif.txt\n\n";
+	echo "\nCek hasilnya di shell_aktif.txt\n\n";
 
 	foreach ($ck as $key) {
 
@@ -42,14 +43,14 @@ Github   : https//github.com/revan-ar/\n\n\e[0;1m";
 	curl_close($ch);
 	preg_match("/<input type=\"password\"/i", $exe, $get);
 		if (!empty($get)) {
-			echo $key." ==> SHELL DITEMUKAN\n";
+			echo $key." ==> SHELL ADA\n";
 			$file = "shell_aktif.txt";
 			  touch($file);
 			  $o = fopen($file, 'a');
 			  fwrite($o, $key."\n");
 			  fclose($o);
 		}else{
-			echo $key." ==> SHELL TIDAK ADA\n";
+			echo $key." ==> SHELL KAGA ADA\n";
 		}
 			
 		}
