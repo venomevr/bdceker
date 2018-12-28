@@ -23,7 +23,7 @@ Thx To     : IndoSec & Revan AR
 	sleep(3);
 	echo $banner;
 	sleep(2);
-	echo "File list shell (shell.txt) : ";
+	echo "File list shell : ";
 	$list = trim(fgets(STDIN));
 	$su = file_get_contents($list);
 	if (empty($su)) {
